@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="style/fontawesome-5.13/css/all.css" />
+    <link rel="stylesheet" href="style/game.css" />
+    <link rel="stylesheet" href="style/template.css" />
+    <link rel="stylesheet" href="style/pretty-checkbox.min.css" />
+    <title>Penta Games</title>
+    <link rel="icon" href="img/icon-penta.jpg" />
+  </head>
+
+  <body>
+    <!-- phase 1 -->
+
+    <div class="form-signin text-center" id="phase-1">
+      <img
+        class="mb-4"
+        src="img/penta.png"
+        style="background-color: rgba(102, 101, 101, 0.5); border-radius: 10px;"
+        width="200"
+        height="60"
+      />
+      <h1 class="h3 mb-3 font-weight-normal">Ndaftar disit</h1>
+      <input
+        type="text"
+        name="nama"
+        id="nama"
+        class="form-control"
+        placeholder="Nama kamu"
+        autocomplete="off"
+      />
+      <br />
+      <button class="btn btn-primary btn-block" id="tombol-lanjut">
+        Lanjut
+      </button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
+    </div>
+
+    <!-- end phase 1 -->
+
+    <!-- phase 2 -->
+    <div id="phase-2" class="text-center hide">
+      <h1>selamat datang <span class="nama-user"></span></h1>
+      <br />
+      <h3>Pengin dolanan apa ora?</h3>
+      <div class="btn btn-group">
+        <button class="btn btn-primary" data-jawab="iya">iya dong</button>
+        <button class="btn btn-danger" data-jawab="ora">ora lah</button>
+      </div>
+    </div>
+    <!-- end phase 2 -->
+
+    <!-- phase 3 -->
+    <!-- ora -->
+    <div id="phase-3-ora" class="text-center hide">
+      <div class="container text-center">
+        <h1>Yowes ra popo <i class="fab fa-angellist"></i></h1>
+        <h3>Maturnuwun <span class="nama-user"></span> sampun mampir</h3>
+        <div class="btn btn-group opsi-terakhir">
+          <a href="index.html" class="btn btn-primary"
+            >Home <i class="fas fa-home"></i
+          ></a>
+          <a href="https://github.com/Ricky-hentama" class="btn btn-secondary"
+            >Github <i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- iya -->
+    <div id="phase-3-iya" class="text-center hide">
+      <div class="container text-center">
+        <h1>Pilih kategori</h1>
+        <ul class="list-group" id="kategori">
+          <li class="list-group-item" data-kategori="toi">
+            <i class="fas fa-caret-right"></i> Seberapa TOI kamu?
+          </li>
+
+          <li class="list-group-item" data-kategori="mesum">
+            <i class="fas fa-caret-right"></i> Semesum apa kamu?
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end phase 3 -->
+
+    <!-- phase 4 -->
+    <div id="phase-4" class="text-center hide mt-5">
+      <div class="container text-center">
+        <h1>Kategori : <span id="kategori-terpilih"></span></h1>
+        <h3>Ide by: <span id="ide-terpilih"></span></h3>
+
+        <div class="papan">
+          <div class="baris">
+            <!-- 1 -->
+            <div class="kartu">
+              <label class="checkbox-label">
+                <input type="checkbox" class="ceklis" value="5" />
+                <span class="checkbox-custom"></span>
+              </label>
+              <p class="isi"></p>
+            </div>
+            <!-- 2 -->
+            <div class="kartu">
+              <label class="checkbox-label">
+                <input type="checkbox" class="ceklis" value="2" />
+                <span class="checkbox-custom"></span>
+              </label>
+              <p class="isi"></p>
+            </div>
+            <!-- 3 -->
+            <div class="kartu">
+              <label class="checkbox-label">
+                <input type="checkbox" class="ceklis" value="1" />
+                <span class="checkbox-custom"></span>
+              </label>
+              <p class="isi"></p>
+            </div>
+            <!-- 4 -->
+            <div class="kartu">
+              <label class="checkbox-label">
+                <input type="checkbox" class="ceklis" value="1" />
+                <span class="checkbox-custom"></span>
+              </label>
+              <p class="isi"></p>
+            </div>
+          </div>
+          <div class="baris">
+            <!-- 5 -->
+            <div class="kartu">
+              <label class="checkbox-label">
+                <input type="checkbox" class="ceklis" value="1" />
+                <span class="checkbox-custom"></span>
+              </label>
+              <p class="isi"></p>
+            </div>
+            <!-- 6 -->
+            <div class="kartu">
+              <label class="checkbox-label">
+                <input type="checkbox" class="ceklis" value="1" />
+                <span class="checkbox-custom"></span>
+              </label>
+              <p class="isi"></p>
+            </div>
+            <!-- 7 -->
+            <div class="kartu">
+              <label class="checkbox-label">
+                <input type="checkbox" class="ceklis" value="1" />
+                <span class="checkbox-custom"></span>
+              </label>
+              <p class="isi"></p>
+            </div>
+            <!-- 8 -->
+            <div class="kartu">
+              <label class="checkbox-label">
+                <input type="checkbox" class="ceklis" value="1" />
+                <span class="checkbox-custom"></span>
+              </label>
+              <p class="isi"></p>
+            </div>
+          </div>
+          <div class="baris">
+            <!-- 9 -->
+            <div class="kartu">
+              <label class="checkbox-label">
+                <input type="checkbox" class="ceklis" value="1" />
+                <span class="checkbox-custom"></span>
+              </label>
+              <p class="isi"></p>
+            </div>
+            <!-- 10  -->
+            <div class="kartu">
+              <label class="checkbox-label">
+                <input type="checkbox" class="ceklis" value="1" />
+                <span class="checkbox-custom"></span>
+              </label>
+              <p class="isi"></p>
+            </div>
+            <!-- 11 -->
+            <div class="kartu">
+              <label class="checkbox-label">
+                <input type="checkbox" class="ceklis" value="1" />
+                <span class="checkbox-custom"></span>
+              </label>
+              <p class="isi"></p>
+            </div>
+            <!-- 12 -->
+            <div class="kartu">
+              <label class="checkbox-label">
+                <input type="checkbox" class="ceklis" value="1" />
+                <span class="checkbox-custom"></span>
+              </label>
+              <p class="isi"></p>
+            </div>
+          </div>
+          <div class="baris">
+            <!-- 13 -->
+            <div class="kartu">
+              <label class="checkbox-label">
+                <input type="checkbox" class="ceklis" value="1" />
+                <span class="checkbox-custom"></span>
+              </label>
+              <p class="isi"></p>
+            </div>
+            <!-- 14 -->
+            <div class="kartu">
+              <label class="checkbox-label">
+                <input type="checkbox" class="ceklis" value="1" />
+                <span class="checkbox-custom"></span>
+              </label>
+              <p class="isi"></p>
+            </div>
+            <!-- 15 -->
+            <div class="kartu">
+              <label class="checkbox-label">
+                <input type="checkbox" class="ceklis" value="1" />
+                <span class="checkbox-custom"></span>
+              </label>
+              <p class="isi"></p>
+            </div>
+            <!-- 16 -->
+            <div class="kartu">
+              <label class="checkbox-label">
+                <input type="checkbox" class="ceklis" value="1" />
+                <span class="checkbox-custom"></span>
+              </label>
+              <p class="isi"></p>
+            </div>
+          </div>
+          <button id="hasil" class="btn btn-lg btn-danger">
+            Tampilkan hasil
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- end phase 4 -->
+
+    <!-- Phase 5 -->
+    <div id="phase-5" class="text-center hide">
+      <div class="container text-center">
+        <h1 class="mb-5">Hasil akhir</h1>
+        <h4>
+          Jika dilihat dari pilihanmu
+        </h4>
+        <h2>
+          <span class="nama-user"></span> kamu itu
+          <span id="text-hasil"></span>
+        </h2>
+        <div class="btn btn-group opsi-terakhir mt-5">
+          <a href="index.html" class="btn btn-primary"
+            >Home <i class="fas fa-home"></i
+          ></a>
+          <a href="https://github.com/Ricky-hentama" class="btn btn-secondary"
+            >Github <i class="fab fa-github"></i
+          ></a>
+          <a
+            class="btn btn-success"
+            href="whatsapp://send?text=https://ricky-hentama.github.io/"
+            data-action="share/whatsapp/share"
+            >Share <i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- end phase 5 -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery/jquery.js"></script>
+    <script src="js/kategori.js"></script>
+    <script src="js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="style/bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>
